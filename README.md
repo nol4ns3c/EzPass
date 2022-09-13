@@ -18,7 +18,7 @@ _______   ________  ________  ________  ________   ________
 
 ```cd EzPass```
 
-```pip install -r requeiements.txt```
+```pip install -r requirements.txt```
 
 
 
