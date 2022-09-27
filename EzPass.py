@@ -25,30 +25,34 @@ apis = ["d1468251dcc15bd72245101c1fc07fae5c3747257092d3230","1eirq2gnxpe0x2crebx
 api = "d1468251dcc15bd72245101c1fc07fae5c3747257092d3230"
 
 def convleet(rw):
+    word = []
     for i in rw:
         if i == "a":
             i = random.choice(['a','@','4'])
-        if i == "o":
+        elif i == "o":
             i = random.choice(['o','0'])
-        if i == "e":
+        elif i == "e":
             i = random.choice(['3','e'])
-        if i == "g":
+        elif i == "g":
             i = random.choice(['g','9','6'])
-        if i == "s":
+        elif i == "s":
             i = random.choice(['5','s','$','&'])
-        if i == "t":
+        elif i == "t":
             i = random.choice(['7','t'])
-        if i == "b":
+        elif i == "b":
             i = random.choice(['b','8'])
-        if i == "i":
+        elif i == "i":
             i = random.choice(['i','1','!'])
-        if i == "c":
+        elif i == "c":
             i = random.choice(['c','('])
-        if i == "h":
+        elif i == "h":
             i = random.choice(['h','#'])
-        if i == "r":
+        elif i == "r":
             i = random.choice(['r','2'])
-        print(i,end='')
+        # print(i,end='')
+        word.append(i)
+    pasword = ''.join(word)
+    return pasword
 
 def getword(mlen):
     global api
@@ -68,6 +72,7 @@ def getword(mlen):
     return rw
 
 
-convleet(getword(mlen))
+password = convleet(getword(mlen))
 print('\n')
+print(password)
 
